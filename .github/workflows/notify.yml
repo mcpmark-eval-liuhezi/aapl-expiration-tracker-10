@@ -1,0 +1,11 @@
+name: Notify weekly
+
+on:
+  workflow_dispatch:
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo status
+        run: echo "AAPL weekly expiration tracker ready."
